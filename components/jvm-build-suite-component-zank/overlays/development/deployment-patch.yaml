@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-zank
+  namespace: jvm-build-wleh-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rh_ee_tnevrlka/test-images@sha256:75f4781b751206429702d611f717489e3a55d13c4082e8fc8da0d8afa19e7629
+        name: container-image
+        resources: {}
+status: {}
